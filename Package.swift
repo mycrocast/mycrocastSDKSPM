@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "MycrocastSDK",
+    name: "MycrocastListener",
     platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "MycrocastSDK",
-            targets: ["MycrocastSDK"]),
+            name: "MycrocastListener",
+            targets: ["MycrocastSDK", "Mycrocast"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -18,6 +18,7 @@ let package = Package(
         .package(url: "https://github.com/emqx/CocoaMQTT.git", exact: "2.1.3")
     ],
     targets: [
+        .target(name: "Mycrocast", dependencies: ["MycrocastSDK", "CocoaMQTT"]),
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(name: "MycrocastSDK", path: "frameworks/MycrocastSDK.xcframework")
