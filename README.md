@@ -1,2 +1,0 @@
-# mycrocastSDKSPM
-SPM mycrocast SDK 
