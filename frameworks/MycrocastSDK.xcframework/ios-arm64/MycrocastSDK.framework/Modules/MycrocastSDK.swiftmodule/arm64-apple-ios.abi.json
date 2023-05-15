@@ -11448,111 +11448,111 @@
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "BooleanLiteral",
       "offset": 58,
-      "length": 5,
-      "value": "false"
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 106,
+      "offset": 105,
       "length": 15,
       "value": "\"159.69.211.32\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 168,
+      "offset": 167,
       "length": 19,
       "value": "\"push.mycrocast.de\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 225,
       "length": 15,
       "value": "\"159.69.211.32\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 284,
+      "offset": 283,
       "length": 18,
       "value": "\"aws.mycrocast.de\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 334,
+      "offset": 333,
       "length": 17,
       "value": "\"\/mycrocast\/rest\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "IntegerLiteral",
-      "offset": 388,
-      "length": 4,
-      "value": "8480"
-    },
-    {
-      "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
-      "kind": "IntegerLiteral",
-      "offset": 433,
+      "offset": 387,
       "length": 4,
       "value": "8080"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "IntegerLiteral",
-      "offset": 476,
+      "offset": 432,
+      "length": 4,
+      "value": "8080"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
+      "kind": "IntegerLiteral",
+      "offset": 475,
       "length": 4,
       "value": "8000"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 519,
       "length": 22,
       "value": "\"http:\/\/159.69.211.32\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 585,
       "length": 27,
       "value": "\"https:\/\/live.mycrocast.de\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 857,
+      "offset": 856,
       "length": 9,
       "value": "\"http:\/\/\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 883,
+      "offset": 882,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 939,
+      "offset": 938,
       "length": 10,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 971,
+      "offset": 970,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1114,
+      "offset": 1113,
       "length": 3,
       "value": "\":\""
     },
