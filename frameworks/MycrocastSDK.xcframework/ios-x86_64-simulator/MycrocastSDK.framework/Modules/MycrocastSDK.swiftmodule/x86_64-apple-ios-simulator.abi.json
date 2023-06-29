@@ -12223,9 +12223,9 @@
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Network\/Reachability.swift",
       "kind": "BooleanLiteral",
-      "offset": 2335,
-      "length": 4,
-      "value": "true"
+      "offset": 2300,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Development\/swiftSDK\/MycrocastSDK\/MycrocastSDK\/Network\/Reachability.swift",

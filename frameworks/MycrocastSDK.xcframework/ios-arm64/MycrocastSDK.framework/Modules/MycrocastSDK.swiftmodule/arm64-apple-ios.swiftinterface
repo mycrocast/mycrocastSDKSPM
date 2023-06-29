@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MycrocastSDK
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MycrocastSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFAudio
 import AVFoundation
 import MycrocastSDK.CLibgif
 import Foundation
@@ -54,6 +55,7 @@ public enum SessionState {
   case idle
   case connecting
   case reconnecting
+  case buffering
   case playing
   case pausing
   case paused
@@ -72,6 +74,7 @@ public protocol StreamSessionDelegate {
   func onAudioDataAvailable(data: AVFAudio.AVAudioPCMBuffer, duration: Swift.Int)
   func streamerMuted(_ stream: MycrocastSDK.LiveStream)
   func streamerUnMuted(_ stream: MycrocastSDK.LiveStream)
+  func onAvailableDelayChanged(_ delay: Swift.Int)
 }
 public class MycrocastError {
   public init(_ errorType: MycrocastSDK.ErrorType, description: Swift.String)
@@ -93,7 +96,7 @@ public protocol ErrorReceiving {
   func onMycrocastError(_ error: MycrocastSDK.MycrocastError)
 }
 public protocol SessionControl {
-  func play(streamId: Swift.Int) -> Swift.Bool
+  func play(streamId: Swift.Int, bufferDuration: Swift.Int?, maxDelay: Swift.Int?) -> Swift.Bool
   func stop()
   func currentStatus() -> MycrocastSDK.SessionState
   func currentPlaying(streamId: Swift.Int) -> Swift.Bool
@@ -101,6 +104,9 @@ public protocol SessionControl {
   func removeObserver(streamDelegate: any MycrocastSDK.StreamSessionDelegate)
   func addObserver(errorDelegate: any MycrocastSDK.ErrorReceiving)
   func removeObserver(errorDelegate: any MycrocastSDK.ErrorReceiving)
+  func currentDelay() -> Swift.Int
+  func availableDelay() -> Swift.Int
+  func setDelay(delay: Swift.Int)
 }
 public enum UserStreamRating : Swift.String, Swift.Codable {
   case neutral
@@ -256,6 +262,11 @@ public protocol Advertisements {
   func ignoreReceivedAdvertisements()
   func addObserver(advertisementDelegate: any MycrocastSDK.AdvertisementDelegate)
   func removeObserver(advertisementDelegate: any MycrocastSDK.AdvertisementDelegate)
+}
+@_hasMissingDesignatedInitializers public class DelayTimeContainer {
+  public var maxDelay: Swift.Int
+  public var currentDelay: Swift.Int
+  @objc deinit
 }
 extension MycrocastSDK.SessionState : Swift.Equatable {}
 extension MycrocastSDK.SessionState : Swift.Hashable {}
