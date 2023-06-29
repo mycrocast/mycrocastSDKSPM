@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "mycrocastSDKPM",
+    name: "mycrocastSDK",
     platforms: [.iOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "mycrocastSDKPM",
-            targets: ["mycrocastSDKPM"]),
+            name: "mycrocastSDK",
+            targets: ["MycrocastSDK"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
